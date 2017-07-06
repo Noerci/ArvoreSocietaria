@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="noerci.arvoresocietaria">
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <meta-data
+            android:name="arvore_societaria.db"
+            android:value="arvore_societaria.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="noerci.arvoresocietaria"
+            android:value="noerci.arvoresocietaria" />
+
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Cadastro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadastroConfirm"
+            android:screenOrientation="portrait" />
+        <activity android:name=".DashboardActivity" />
+        <activity
+            android:name=".LoginErrosActivity"
+            android:label="@string/title_activity_login_erros"></activity>
+    </application>
+
+</manifest>

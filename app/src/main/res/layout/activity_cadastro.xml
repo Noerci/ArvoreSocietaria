@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="noerci.arvoresocietaria.Cadastro"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="#406c85">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/logotopheader"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/nomeText"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/label"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/senhaText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+    <EditText
+        android:id="@+id/senhaText"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/label"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/nomeText"
+        android:layout_alignStart="@+id/nomeText" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/nomeText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/nomeText"
+
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/button2"
+        android:onClick="btnCadastro"
+        android:text="Cadastrar"
+        android:textColor="#fdfeff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRO"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
+
+
+</RelativeLayout>

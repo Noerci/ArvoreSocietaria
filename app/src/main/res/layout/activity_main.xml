@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="noerci.arvoresocietaria.Cadastro"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="#406c85">
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/button2"
+        android:onClick="clickBtnDash"
+        android:text="Cadastro" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:src="@drawable/logotopheader"
+        android:visibility="visible" />
+
+
+    <EditText
+        android:id="@+id/usuarioText"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/senhaText"
+        android:layout_alignLeft="@+id/senhaText"
+        android:layout_alignStart="@+id/senhaText"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/label"
+        android:ems="10"
+        android:hint=" Usuário"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/senhaText"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+
+        android:layout_alignLeft="@+id/btnEntrar"
+        android:layout_alignStart="@+id/btnEntrar"
+        android:layout_centerVertical="true"
+        android:background="@drawable/label"
+        android:ems="100"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:text="Entrar"
+        android:onClick="clickBtnEntrar"
+        android:textColor="#fdfeff"
+        android:layout_above="@+id/btnCadastro"
+        android:layout_alignLeft="@+id/btnCadastro"
+        android:layout_alignStart="@+id/btnCadastro"
+        android:layout_marginBottom="45dp" />
+
+
+</RelativeLayout>
